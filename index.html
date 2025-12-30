@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infographie — Projet SAE</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fruit-dark-red': '#7D3340',
+            'fruit-orange': '#FF7315',
+            'fruit-red': '#E62E43',
+            'fruit-yellow': '#FFCC00',
+            'fruit-light-green': '#B4D333',
+            'fruit-green': '#3E6635',
+            'fruit-black': '#1A1C0E',
+          },
+          fontFamily: {
+            'sans': ['Lato', 'sans-serif'],
+            'heading': ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#F1F5F0] text-gray-900 font-sans leading-relaxed">
+
+  <div class="h-2 w-full bg-fruit-orange"></div>
+
+  <header class="bg-fruit-green py-20 mb-12 shadow-lg relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-32 h-32 bg-fruit-yellow opacity-10 rounded-full -mr-16 -mt-16"></div>
+    
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <h1 class="font-heading text-4xl md:text-5xl font-extrabold text-white uppercase tracking-tight">
+        Le guide des fruits et légumes
+      </h1>
+      <p class="mt-4 text-white/90 font-semibold text-xl">
+        Projet de Data-Visualisation & Design
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4">
+    
+    <section class="mb-16">
+      <h2 class="font-heading text-2xl font-bold text-fruit-green mb-4 flex items-center">
+        <span class="w-2 h-8 bg-fruit-orange mr-3"></span>
+        Présentation du projet
+      </h2>
+      <div class="bg-fruit-yellow/20 p-8 rounded-2xl border-2 border-fruit-yellow shadow-sm">
+        <p class="text-gray-800 text-lg leading-relaxed">
+          Par le biais de ce guide visuel, nous voulons montrer que la saisonnalité est plus qu’une donnée. 
+          Quand les différents produits locaux ou importés sont disponibles et à quelle période. Ainsi, visualiser 
+          les fruits et légumes facilement accessible pour une alimentation saine. Cela permet de réduire l’impact 
+          environnemental et de soutenir les producteurs locaux. 
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-20">
+      <h2 class="font-heading text-2xl font-bold text-fruit-green mb-8 text-center uppercase tracking-widest">
+        L'infographie
+      </h2>
+      
+      <div class="bg-white p-3 rounded-xl shadow-2xl border border-fruit-orange/20">
+        <img src="Infographie/images/infographie.jpg" 
+             alt="Visualisation des données"
+             class="w-full h-auto block rounded-lg">
+      </div>
+      
+      <p class="text-center text-sm text-gray-500 mt-6 italic">Format Print A3 </p>
+    </section>
+
+    <section class="mb-20 grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-fruit-orange">
+        <h2 class="font-heading text-xl font-bold text-black mb-6 border-b pb-2">Sources de données</h2>
+        
+        <ul class="space-y-3 font-medium">
+          <li class="flex items-center">
+            <span class="text-fruit-orange mr-2">●</span>
+            <a href="https://public.tableau.com/app/discover/viz-of-the-day" 
+               target="_blank" 
+               class="text-gray-700 hover:text-fruit-orange transition-colors break-all">
+               Tableau Public
+            </a>
+          </li>
+          <li class="flex items-center">
+            <span class="text-fruit-orange mr-2">●</span>
+            <a href="https://fr.pinterest.com/pin/141511613287114267" 
+               target="_blank" 
+               class="text-gray-700 hover:text-fruit-orange transition-colors break-all">
+               Pinterest - Inspiration Design
+            </a>
+          </li>
+          <li class="flex items-center">
+            <span class="text-fruit-orange mr-2">●</span>
+            <a href="https://fr.pinterest.com/pin/20195898325413930/" 
+               target="_blank" 
+               class="text-gray-700 hover:text-fruit-orange transition-colors break-all">
+               Pinterest - Inspiration Graphique
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-fruit-yellow">
+        <h2 class="font-heading text-xl font-bold text-black mb-6 border-b pb-2">Membres du groupe</h2>
+        <ul class="text-black space-y-3 font-medium">
+          <li class="flex items-center">
+            <span class="w-1.5 h-1.5 bg-fruit-yellow rounded-full mr-3"></span>
+            Raliya MOHAMED OUSMAN
+          </li>
+          <li class="flex items-center">
+            <span class="w-1.5 h-1.5 bg-fruit-yellow rounded-full mr-3"></span>
+            Sarah IMMEL
+          </li>
+          <li class="flex items-center">
+            <span class="w-1.5 h-1.5 bg-fruit-yellow rounded-full mr-3"></span>
+            Asnati MOHAMED
+          </li>
+          <li class="flex items-center">
+            <span class="w-1.5 h-1.5 bg-fruit-yellow rounded-full mr-3"></span>
+            Shadelya LUKAU LOLA
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-fruit-black text-white py-12 px-4 mt-10 border-t-4 border-fruit-yellow">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="images/logo-cy.png" alt="Logo CY Cergy Paris Université" class="w-48 mx-auto mb-6 block">      
+      <p class="font-heading font-semibold tracking-widest text-fruit-light-green mb-2 uppercase">Année Universitaire 2025 - 2026</p>
+      <p class="text-gray-400 text-sm italic"> BUT MMI2 </p>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-xs text-gray-500 uppercase tracking-widest">
+        &copy; CY Cergy Paris Université - Raliya MOHAMED OUSMAN, Sarah IMMEL, Asnati MOHAMED, Shadelya LUKAU LOLA
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
